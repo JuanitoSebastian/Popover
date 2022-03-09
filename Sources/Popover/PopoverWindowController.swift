@@ -56,7 +56,7 @@ class PopoverWindowController: NSWindowController, NSWindowDelegate {
         let windowFrame = visibleStatusItemWindowFrame()
         window.arrowXLocation = windowFrame.arrowXLocation
         window.setFrame(windowFrame.frame, display: true)
-        window.appearance = NSAppearance.current
+        window.appearance = NSAppearance.currentDrawing()
     }
 
     private func visibleStatusItemWindowFrame() -> (frame: NSRect, arrowXLocation: CGFloat) {
